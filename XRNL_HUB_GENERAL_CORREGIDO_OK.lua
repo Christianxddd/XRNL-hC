@@ -209,7 +209,7 @@ ToggleButton.MouseButton1Click:Connect(function()
             local Highlights = {}
 
             local Settings = {
-                Enabled = false,
+                ESP = false,
                 TeamCheck = false,
                 ShowTeam = false,
                 VisibilityCheck = true,
@@ -1029,7 +1029,7 @@ ExtraSection:AddParagraph({ Title = "Secreto", Content = "Puedes usar esto para 
             })
 
             local Tabs = {
-                ESP = Window:AddTab({ Title = "Movimiento", Icon = "run" }),
+                ESP = Window:AddTab({ Title = "General", Icon = "run" }),
                 Settings = Window:AddTab({ Title = "Utilidades", Icon = "settings" }),
                 Config = Window:AddTab({ Title = "Config", Icon = "save" })
             }
@@ -1066,6 +1066,14 @@ ExtraSection:AddParagraph({ Title = "Secreto", Content = "Puedes usar esto para 
                 Description = "Ejecuta el script Rieles Muertos",
                 Callback = function()
                     loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))()
+                end
+            })
+
+                    JuegosSection:AddButton({
+                Title = "Murder Mystery2",
+                Description = "Ejecuta el script MM2",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/CycleScripts/Official/refs/heads/main/freemium"))()
                 end
             })
                     
